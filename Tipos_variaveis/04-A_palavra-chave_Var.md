@@ -28,7 +28,7 @@ import "fmt"
 
 // Neste caso funcionará pois a variável y está em um escopo global, todos podem vê-la.
 
-var y = 10 
+var y int = 10 
 
 func main() {
 	exibe(y)
@@ -47,10 +47,10 @@ func exibe(x int) {
   
   import "fmt"
   
-  var y = 10
+  var y int = 10
   
   func main() {
-  	var x = 15
+  	var x int = 15
   	fmt.Println(x)
   	fmt.Println(y)
   }
