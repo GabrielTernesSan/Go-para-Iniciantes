@@ -26,6 +26,10 @@
 
 - **Declaração**: Uma linha de código, uma instrução que forma uma ação, formada de expressões.
 
+- **Inicialização**: primeiro valor atribuído a uma variável
+
+- **Atribuição**: alteração.
+
   ```Go
   import "fmt"
   	func main() {
@@ -51,3 +55,16 @@ const  if       range type       continue
 for    import   return           var
 ```
 
+- **Valor zero**: O que é valor zero?
+
+  -  Valor zero é o valor que se encontra em uma variável antes dela ser _inicializada_ pelo usuário.
+
+  - Os zeros:
+
+    ````GO
+    Int: 0         Boolean: false
+    Float: 0.0     string: ""
+    Ponteiros, functions, slices, maps: nil
+    ````
+
+    
