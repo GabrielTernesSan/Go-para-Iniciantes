@@ -11,6 +11,13 @@
   var y := "a tia do Batima" // String
   ```
 
+- Ou pode ser declarado especificamente
+
+  ```GO
+  var w string = "isso é uma string"
+  var z int = 15
+  ```
+
   
 
 - **Tipos de dados primitivos**: Disponíveis na linguagem nativamente como blocos blocos básicos.
