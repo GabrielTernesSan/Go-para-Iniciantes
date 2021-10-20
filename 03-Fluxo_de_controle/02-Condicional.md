@@ -154,6 +154,28 @@
     chis é maior que 12
     ```
 
+- Operadores lógicos condicionais
+
+  - && ("e" lógico) // ambas as expressões precisam ser verdadeiras
+
+    ```GO
+    x := 6
+    
+    if (x % 2 == 0 && x % 3 == 0) { //Só funcinará se o x for divisível por 2 "E" por 3
+         fmt.Printls("é múltiplo de dois e tambem de três")
+    }
+    ```
+
+  - || ("ou" lógico) // somente uma das expressões precisa ser verdadeira
+
+    ```GO
+    x := 3
+    
+    if (x == 2 || x == 3) {
+         fmt.Printls("chis é maior que dois ou três")
+    }
+    ```
+
     
 
 [^*]: "Se esse aqui está certo o próximo também", ou seja, se o case atual for true o próximo também será.
