@@ -255,3 +255,83 @@
     [1 2 3 4 5 6 7 8]
     [1 2 3 4 5 6 7 8 9 10 11 12]
     ```
+
+- Slice: make
+
+  - Apesar de ser conveniente, as slices mudarem de tamanho, o processo de criar uma nova slice e copiar todos os elementos para ela gera um custo computacional.
+
+  - Para otimizar as coisas podemos utilizar a função make.
+
+    - make ([]T, len, cap)
+
+    - Len se refere ao comprimento do slice
+
+    - Cap está relacionado à capacidade do array subjacente, ou seja, podemos ter uma slice com 10 inteiros e usar a função append sem a necessidade de criar uma nova slice, bastando colocar a capacidade do array subjacente maior, por exemplo, cap(50).
+
+      ````go
+      package main
+      
+      import "fmt"
+      
+      func main() {
+      	slice := make([]int, 5, 10)
+      
+      	/*Como não foi atribuido um valor para o 5 valor o make atribui o valor 0*/
+      	slice[0], slice[1], slice[2], slice[3] = 1, 2, 3, 4
+      
+      	fmt.Println(slice, len(slice), cap(slice))
+      }
+      OUTPUT:
+      [1 2 3 4 0] 5 10
+      ````
+
+  - Para aumentar a capacidade da slice use a função append
+
+    ```GO
+    package main
+    
+    import "fmt"
+    
+    func main() {
+    	slice := make([]int, 5, 10)
+    
+    	/*Como não foi atribuido um valor para o 5 valor o make atribui o valor 0*/
+    	slice[0], slice[1], slice[2], slice[3] = 1, 2, 3, 4
+    	
+        //A função append adiciona ao final da slice
+         slice = append(slice, 10)
+        
+    	fmt.Println(slice, len(slice), cap(slice))
+    }
+    //Não é criado outra slice pois a capacidade do slice subjacente é 10, isso otimiza o custo computacional
+    OUTPUT:
+    [1 2 3 4 0 10] 6 10
+    ```
+
+  - Para aumentar a capacidade do array subjacente basta atingir o limite, ele dobrará a capacidade
+
+    ````GO
+    package main
+    
+    import "fmt"
+    
+    func main() {
+    	slice := make([]int, 5, 10)
+    
+    	slice[0], slice[1], slice[2], slice[3], slice[4] = 1, 2, 3, 4, 5
+    	
+        //A função append adiciona ao final da slice
+        slice = append(slice, 6)
+        slice = append(slice, 7)
+        slice = append(slice, 8)
+        slice = append(slice, 9)
+        slice = append(slice, 10)
+        slice = append(slice, 11)
+        
+    	fmt.Println(slice, len(slice), cap(slice))
+    }
+    OUTPUT:
+    [1 2 3 4 5 6 7 8 9 10 11] 11 20
+    ````
+
+    
