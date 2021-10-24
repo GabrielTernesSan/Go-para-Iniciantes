@@ -334,4 +334,63 @@
     [1 2 3 4 5 6 7 8 9 10 11] 11 20
     ````
 
+- Slices multi-dimencionais
+
+  - Slice multi-dimencionais são slices que contém slices
+
+  - São como planilhas
+
+    ```GO
+    package main
     
+    import (
+    	"fmt"
+    )
+    
+    func main() {
+    	ss := [][]int{
+        //Índice:  0  1  2  3       Índice:
+    		[]int{1, 2, 3, 4},    //0
+    		[]int{5, 6, 7, 8},    //1
+    		[]int{9, 10, 11, 12}, //2
+    	}
+    	/*fmt.Println(ss) //slice inteira [[1 2 3 4] [5 6 7 8] [9 10 11 12]]*/
+    	/*fmt.Println(ss[1]) //segunda linha da slice [5 6 7 8]*/
+    	/*fmt.Println(ss[1][1]) //2º elemento da 2º linha da slice -> 6 */
+    }
+    ```
+
+- Slice a surpresa do array subjacente
+
+  - Se for usado uma slice para gerar outra slice eles terão o mesmo array subjacente, e ao gerar outro slice você estará alterando o primeiro.
+
+    ```GO
+    package main
+    
+    import (
+    	"fmt"
+    )
+    
+    func main() {
+    
+    	primeiroslice := []int{1, 2, 3, 4, 5}
+    	
+    	fmt.Println(primeiroslice)
+    	
+        /*O segundoslice refatiou o array subjacente de forma que o 5 fica-
+        -sse visível e isso alterou a slice primeiroslice pois eles têm o 
+        mesmo array subjacente.*/
+    	segundoslice := append(primeiroslice[:2], primeiroslice[4:]...)
+    
+    	fmt.Println(segundoslice)
+    
+    	fmt.Println(primeiroslice)
+    }
+    OUTPUT:
+    [1 2 3 4 5]
+    [1 2 5]
+    [1 2 5 4 5]
+    ```
+
+    
+
