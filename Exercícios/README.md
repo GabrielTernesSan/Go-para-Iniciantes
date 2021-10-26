@@ -233,6 +233,8 @@
   - y := []int{56, 57, 58, 59, 60}
 - Demonstre a slice x.
 
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio4-4.go) 
+
 ### Exercício 4.5
 
 - Comece com essa slice:
@@ -240,12 +242,16 @@
 - Utilizando slicing e append, crie uma slice y que contenha os valores:
   - [42, 43, 44, 48, 49, 50, 51]
 
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio4-5.go) 
+
 ### Exercício 4.6
 
 - Crie uma slice usando make que possa conter todos os estados do Brasil.
   - Os estados: "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Espírito Santo", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondônia", "Roraima", "Santa Catarina", "São Paulo", "Sergipe", "Tocantins"
 - Demonstre o len e cap da slice.
 - Demonstre todos os valores da slice *sem utilizar range.*
+
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio4-6.go) 
 
 ### Exercício 4.7
 
