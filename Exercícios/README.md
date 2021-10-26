@@ -199,6 +199,8 @@
 - Utilize range e demonstre os valores do array.
 - Utilizando format printing, demonstre o tipo do array.
 
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio4-1.go) 
+
 ### Exercício 4.2
 
 - Usando uma literal composta:
@@ -206,6 +208,8 @@
   - Atribua 10 valores a ela
 - Utilize range para demonstrar todos estes valores.
 - E utilize format printing para demonstrar seu tipo.
+
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio4-2.go) 
 
 ### Exercício 4.3
 
@@ -215,6 +219,8 @@
   - Do segundo ao sétimo item do slice (incluindo o sétimo item!)
   - Do terceiro ao penúltimo item do slice (incluindo o penúltimo item!)
   - Desafio: obtenha o mesmo resultado acima utilizando a função len() para determinar o penúltimo item
+
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio4-3.go) 
 
 ### Exercício 4.4
 
