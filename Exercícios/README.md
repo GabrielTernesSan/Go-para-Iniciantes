@@ -259,6 +259,8 @@
   - "Nome", "Sobrenome", "Hobby favorito"
 - Inclua dados para 3 pessoas, e utilize range para demonstrar estes dados.
 
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio4-7.go) 
+
 ### Exercício 4.8
 
 - Crie um map com key tipo string e value tipo []string.
@@ -266,10 +268,16 @@
   - Value deve conter os hobbies favoritos da pessoa
 - Demonstre todos esses valores e seus índices.
 
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio4-8.go) 
+
 ### Exercício 4.9
 
 - Utilizando o exercício anterior, adicione uma entrada ao map e demonstre o map inteiro utilizando range.
 
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio4-9.go) 
+
 ### Exercício 4.10
 
 - Utilizando o exercício anterior, remova uma entrada do map e demonstre o map inteiro utilizando range.
+
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio4-10.go) 
