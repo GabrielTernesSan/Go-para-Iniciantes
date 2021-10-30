@@ -61,4 +61,68 @@
   {Joana Pereira true}
   ````
 
-  
+- Slice embutidos
+
+  - São structs dentro de strucs dentro de structs
+
+  - Exemplo: um corredor de fórmula 1 é uma pessoa (nome, sobrenome, idade) *e também* um competidor (nome, equipe, pontos).
+
+    ```GO
+    package main
+    
+    import (
+    	"fmt"
+    )
+    
+    type pessoa struct {
+    	nome      string
+    	sobrenome string
+    	idade     int
+    }
+    
+    type piloto struct {
+    	pessoa
+    	nome    string
+    	equipe  string
+    	pontos  int
+    	tempo   float64
+    	posicao int
+    }
+    
+    func main() {
+    
+    	pessoa1 := pessoa{
+    		nome:      "Gabriel",
+    		sobrenome: "Santos",
+    		idade:     21,
+    	}
+    	pessoa2 := piloto{
+    		pessoa: pessoa{
+    			nome:      "Max",
+    			sobrenome: "Verstappen",
+    			idade:     24,
+    		},
+    		pontos:  25,
+    		tempo:   1.34,
+    		posicao: 1,
+    	}
+    	pessoa3 := piloto{
+    		pessoa: pessoa{
+    			nome:      "Lewis",
+    			sobrenome: "Hamilton",
+    			idade:     36,
+    		},
+    		pontos:  19,
+    		tempo:   1.35,
+    		posicao: 2,
+    	}
+    
+    	fmt.Println(pessoa1, pessoa2, pessoa3)
+    }
+    OUTPUT:
+    {Gabriel Santos 21}{{Max Verstappen 24}25 1.34 1}{{Lewis Hamilton 36} 19 1.35 2}
+    
+    ```
+
+    
+
