@@ -102,6 +102,7 @@
     			sobrenome: "Verstappen",
     			idade:     24,
     		},
+    		equipe: "Red Bull",
     		pontos:  25,
     		tempo:   1.34,
     		posicao: 1,
@@ -112,6 +113,7 @@
     			sobrenome: "Hamilton",
     			idade:     36,
     		},
+    		equipe: "Mercedes",
     		pontos:  19,
     		tempo:   1.35,
     		posicao: 2,
@@ -120,8 +122,7 @@
     	fmt.Println(pessoa1, pessoa2, pessoa3)
     }
     OUTPUT:
-    {Gabriel Santos 21}{{Max Verstappen 24}25 1.34 1}{{Lewis Hamilton 36} 19 1.35 2}
-    
+    {Gabriel Santos 21} {{Max Verstappen 24}  Red Bull 25 1.34 1} {{Lewis Hamilton 36}  Mercedes 19 1.35 2}
     ```
 
     
