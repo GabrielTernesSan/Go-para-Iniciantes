@@ -119,7 +119,7 @@
     		posicao: 2,
     	}
     
-    	fmt.Println(pessoa1)
+      fmt.Println(pessoa1)
       fmt.Println("\n")
       
       fmt.Println(pessoa2)
