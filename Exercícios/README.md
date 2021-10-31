@@ -288,13 +288,20 @@
   - Nome
   - Sobrenome
   - Sabores favoritos de sorvete
+  
 - Crie dois valores do tipo "pessoa" e demonstre estes valores, utilizando range na slice que contem os sabores de sorvete.
+
+  [Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio5-1.go) 
 
 ### Exercício  5.2
 
 - Utilizando a solução anterior, coloque os valores do tipo "pessoa" num map, utilizando os sobrenomes como key.
+
 - Demonstre os valores do map utilizando range.
+
 - Os diferentes sabores devem ser demonstrados utilizando outro range, dentro do range anterior.
+
+  [Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio5-2.go) 
 
 ### Exercício  5.3
 
@@ -312,7 +319,11 @@
 - Demonstre estes valores.
 - Demonstre um único campo de cada um dos dois.
 
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio5-3.go) 
+
 ### Exercício  5.4
 
 - Crie e use um struct anônimo.
 - Desafio: dentro do struct tenha um valor de tipo map e outro do tipo slice.
+
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio5-4.go) 
