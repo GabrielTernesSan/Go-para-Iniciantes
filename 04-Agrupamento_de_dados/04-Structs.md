@@ -119,11 +119,33 @@
     		posicao: 2,
     	}
     
-    	fmt.Println(pessoa1, pessoa2, pessoa3)
+      fmt.Println(pessoa1)
+      fmt.Println("\n")
+      
+      fmt.Println(pessoa2)
+      fmt.Println("\n")
+      
+      fmt.Println(pessoa3)
+      fmt.Println("\n")
+      
+      // Para acessar a struct embutida
+      
+      fmt.Println(pessoa2.pessoa.nome)
+      
+      fmt.Println()
+      
+      fmt.Println(pessoa3.pessoa.sobrenome)
     }
     OUTPUT:
-    {Gabriel Santos 21} {{Max Verstappen 24}  Red Bull 25 1.34 1} {{Lewis Hamilton 36}  Mercedes 19 1.35 2}
+    {Gabriel Santos 21}
+    
+    {{Max Verstappen 24}  Red Bull 25 1.34 1}
+    
+    {{Lewis Hamilton 36}  Mercedes 19 1.35 2}
+    
+    Max
+    
+    Hamilton
     ```
 
     
-
