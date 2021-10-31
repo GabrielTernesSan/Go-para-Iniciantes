@@ -139,7 +139,7 @@
     OUTPUT:
     {Gabriel Santos 21}
     
-    {{Max Verstappen 24}  Red Bull 25 1.34 1}
+    {{Max Verstappe 24}  Red Bull 25 1.34 1}
     
     {{Lewis Hamilton 36}  Mercedes 19 1.35 2}
     
