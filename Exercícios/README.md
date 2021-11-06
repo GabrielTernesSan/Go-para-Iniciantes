@@ -336,6 +336,8 @@
   - Chame as duas funções
   - Demonstre seus resultados
 
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio6-1.go) 
+
 ### Exercício 6.2
 
 - Crie uma função que receba um parâmetro variádico do tipo int e retorne a soma de todos os ints recebidos;
@@ -343,9 +345,13 @@
 - Crie outra função, esta deve receber um valor do tipo slice of int e retornar a soma de todos os elementos da slice;
 - Passe um valor do tipo slice of int como argumento para a função.
 
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio6-2.go) 
+
 ### Exercício 6.3
 
 - Utilize a declaração defer de maneira que demonstre que sua execução só ocorre ao final do contexto ao qual ela pertence.
+
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio6-3.go) 
 
 ### Exercício 6.4
 
@@ -356,6 +362,8 @@
 - Crie um método para "pessoa" que demonstre o nome completo e a idade;
 - Crie um valor de tipo "pessoa";
 - Utilize o método criado para demonstrar esse valor.
+
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio6-4.go) 
 
 ### Exercício 6.5
 
@@ -371,14 +379,20 @@
 - Use a função "info" para demonstrar a área do "quadrado"
 - Use a função "info" para demonstrar a área do "círculo"
 
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio6-5.go) 
+
 ### Exercício 6.6
 
 - Crie e utilize uma função anônima.
+
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio6-6.go) 
 
 ### Exercício 6.7
 
 - Atribua uma função a uma variável.
 - Chame essa função.
+
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio6-7.go) 
 
 ### Exercício 6.8
 
@@ -386,11 +400,17 @@
 - Atribua a função retornada a uma variável.
 - Chame a função retornada.
 
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio6-8.go) 
+
 ### Exercício 6.9
 
 - Callback: passe uma função como argumento a outra função.
+
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio6-9.go) 
 
 ### Exercício 6.10
 
 - Demonstre o funcionamento de um closure.
 - Ou seja: crie uma função que retorna outra função, onde esta outra função faz uso de uma variável alem de seu scope.
+
+[Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio6-10.go) 
