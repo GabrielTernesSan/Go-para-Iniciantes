@@ -18,6 +18,6 @@ func main() {
 }
 
 func mudeMe(p *pessoa) {
-	p.nome = "Gabriel"
+	(*p).nome = "Gabriel"
 	p.sobrenome = "santos"
 }
