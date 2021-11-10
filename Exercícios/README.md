@@ -419,6 +419,7 @@
 
 - Crie um valor e atribua-o a uma variável.
 - Demonstre o endereço deste valor na memória.
+- [Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio7-1.go) 
 
 ### Exercício 7.2
 
@@ -431,3 +432,4 @@
   - Ou seja, podemos usar tanto o atalho p1.nome quanto o tradicional (*p1).nome
 - Crie um valor do tipo pessoa;
 - Use a função mudeMe e demonstre o resultado.
+- [Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio7-2.go) 
