@@ -414,3 +414,20 @@
 - Ou seja: crie uma função que retorna outra função, onde esta outra função faz uso de uma variável alem de seu scope.
 
 [Solução](https://github.com/GabrielTernesSan/Go-para-Iniciantes/blob/master/Exerc%C3%ADcios/Exercicio6-10.go) 
+
+### Exercício 7.1
+
+- Crie um valor e atribua-o a uma variável.
+- Demonstre o endereço deste valor na memória.
+
+### Exercício 7.2
+
+- Crie um struct "pessoa"
+- Crie uma função chamada mudeMe que tenha *pessoa como parâmetro. Essa função deve mudar um valor armazenado no endereço *pessoa.
+  - Dica: a maneira "correta" para fazer dereference de um valor em um struct seria (*valor).campo
+  - Mas consta uma exceção na [Documentação](https://golang.org/ref/spec#Selectors)
+  - "As an exception, if the type of x is a named pointer type and (*x).f is a valid selector expression denoting a field (but not a method),
+  - → x.f is shorthand for (*x).f." ←
+  - Ou seja, podemos usar tanto o atalho p1.nome quanto o tradicional (*p1).nome
+- Crie um valor do tipo pessoa;
+- Use a função mudeMe e demonstre o resultado.
