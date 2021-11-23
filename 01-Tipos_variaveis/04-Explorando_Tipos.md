@@ -38,3 +38,23 @@
   struct 
   map
   ```
+
+- Package Reflect
+
+  - Você pode usar a função do typeOf do package reflect para descobrir o tipo da variável
+
+    ``````go
+    package main
+    
+    import (
+    	"fmt"
+    	"reflect"
+    )
+    
+    func main() {
+    	nome := "Gabriel"
+    	fmt.Println("O tipo de nome é", reflect.TypeOf(nome))
+    }
+    ``````
+
+    
