@@ -6,7 +6,7 @@
 - Como faz?
   - Strings
   
-```
+```golang
     package main
     import (
 	"fmt"
@@ -28,7 +28,7 @@
 ```
   - Ints
 
-```
+```golang
     package main
 
     import (

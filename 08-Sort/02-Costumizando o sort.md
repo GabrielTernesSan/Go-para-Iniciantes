@@ -3,7 +3,7 @@
 - Como fazer o seu próprio sort
     Para fazermos nosso próprio sort vamos usar a func Sort do package sort. Vamos precisar de um [sort.Interface](https://pkg.go.dev/sort#Interface) `type Interface interface { Len() int; Less(i, j int) bool; Swap(i, j int) }`. Ou seja, se tivermos um tipo que tenha esses métodos, ao executar sort.Sort(x) as funções que vão rodar são as minhas, não as funções pré-prontas como nos exemplos anteriores.
 
-```
+```golang
     package main
 
     import (

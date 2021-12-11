@@ -1,6 +1,6 @@
 # Afinal o que é bcrypt?
 
-- bcrypt é um método de criptografia do tipo (hash)[https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_hash] para senhas baseado no Blowfish. Este método
+- bcrypt é um método de criptografia do tipo [hash](https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_hash) para senhas baseado no Blowfish. Este método
    apresenta uma segurança maior em relação à maioria dos outros métodos criptográficos que é a 
    implementação da variável "custo" que é proporcional à quantidade de processamento necessária 
    para criptografar a senha. O método é conhecido como hash adaptativo às melhorias futuras de 
@@ -23,13 +23,13 @@
 
   # Como fazer?
 
-- Para fazermos o uso do bcrypt vamos usar duas funções do package do GO (bcrypt)[https://pkg.go.dev/golang.org/x/crypto/bcrypt],
+- Para fazermos o uso do bcrypt vamos usar duas funções do package do GO [bcryp](hthttps://pkg.go.dev/golang.org/x/crypto/bcrypt),
   a GenerateFromPasswordessa função retorna o hash bcrypt da senha com o custo computacional fornecido, e se o custo computacional 
   fornecido for menor que MinCost (MinCost int = 4), o custo será definido como DefaultCost. A segunda função é a 
   CompareHashAndPassword que compara uma senha com hash bcrypt com seu possível equivalente em texto simples. Retorna nulo em caso
   de sucesso ou erro em caso de falha.
 
-```
+```golang
     package main
 
     import "fmt"
